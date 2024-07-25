@@ -1,24 +1,17 @@
+import { Route, Routes } from "react-router-dom"
+import Demo from "./pages/demo"
+import Home from "./pages/home"
 
-import './App.css';
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>HELLO</h1>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    
+          <Routes>
+            <Route exact path="/" element={<Home/>}/>
+            <Route path="/media" element={<Media/>}/>
+          </Routes>
+
   );
 }
 
