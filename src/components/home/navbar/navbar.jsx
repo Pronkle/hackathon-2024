@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react"
 
 import "./style.css"
-import { Link, ScrollRestoration } from "react-router-dom"
+import { Link } from "react-router-dom"
 
 
 

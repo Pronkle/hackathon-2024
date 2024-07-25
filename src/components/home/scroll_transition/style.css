@@ -1,0 +1,58 @@
+.scroll-transition-section {
+    min-height: 500vh;
+
+    #first {
+        position: absolute;
+        max-height: 90vh;
+        width: 85vw;
+        left: 0; 
+        right: 0; 
+        margin-left: auto; 
+        margin-right: auto; 
+    }
+    
+
+    .map-holder {
+        padding-top: 50px;
+        position: relative;
+        top: 90vh;
+        max-height: 90vh;
+        width: 85vw;
+        left: 0; 
+        right: 0; 
+        margin-left: auto; 
+        margin-right: auto; 
+
+        #second {
+            position: absolute;
+            height: 90vh;
+            width: 85vw;
+            left: 0; 
+            right: 0; 
+            margin-left: auto; 
+            margin-right: auto; 
+            z-index: -1;
+        }
+
+        #pin1 {
+            position: absolute;
+            top: 43vh;
+            left: 11vw;
+            width: 2vw;
+        }
+
+        #pin2 {
+            position: absolute;
+            top: 47vh;
+            left: 20vw;
+            width: 2vw;
+        }
+
+        #pin3 {
+            position: absolute;
+            top: 57vh;
+            left: 43vw;
+            width: 2vw;
+        }
+    }
+}
