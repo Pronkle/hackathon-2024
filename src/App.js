@@ -1,9 +1,10 @@
-import { Route, Routes } from "react-router-dom"
+import { Route, Routes} from "react-router-dom"
 import Demo from "./pages/demo/demo"
 import Home from "./pages/home/home"
 import Navbar from "./components/public/navbar/navbar"
 
 import './App.css'
+import { useEffect } from "react"
 
 function App() {
 
