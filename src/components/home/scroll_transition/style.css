@@ -60,5 +60,35 @@
             left: 43vw;
             width: 2vw;
         }
+
+        .list-animation * {
+            border-style: solid;
+            border-color: black;
+            border-width: 2px;
+            border-radius: 20px;
+            height: 10vh;
+            margin-top: 3vh;
+            background-image: -webkit-linear-gradient(-50deg, #bd0f0fbb 70%, #e70000bb 30%);
+            display: flex;
+            align-items: center;
+            padding-left: 25px;
+            color: white;
+        }
+        .list-animation {
+            position: absolute;
+            height: 60vh;
+            width: 20vw;
+            top: 20vh;
+            left: 60vw;
+
+            #item1 {
+            }
+            #item2 {
+                
+            }
+            #item3 {
+                
+            }
+        }
     }
 }

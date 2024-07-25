@@ -21,7 +21,6 @@ export default function ScrollTransition() {
                     scrub: true,
                     pin: true,
                     pinSpacing: false,
-                    markers: true
                 },
                 scale: 0.9,
                 opacity: 0,
@@ -37,7 +36,6 @@ export default function ScrollTransition() {
                     scrub: true,
                     pin: true,
                     pinSpacing: false,
-                    markers: true
                 },
                 ease: "none",
                 duration: 3
@@ -49,7 +47,6 @@ export default function ScrollTransition() {
                     start: "top top",
                     end: "+=100px",
                     toggleActions: "restart",
-                    markers: true,
                     scrub: true
                 },
                 transform: "translate(0, 0px)",
@@ -63,7 +60,6 @@ export default function ScrollTransition() {
                     start: "top top",
                     end: "+=500px",
                     toggleActions: "restart",
-                    markers: true,
                     scrub: true
                 },
                 transform: "translate(0, 0px)",
@@ -77,7 +73,6 @@ export default function ScrollTransition() {
                     start: "top top",
                     end: "+=900px",
                     toggleActions: "restart",
-                    markers: true,
                     scrub: true
                 },
                 transform: "translate(0, 0px)",
@@ -97,6 +92,11 @@ export default function ScrollTransition() {
                 <img id='pin2' src="/map_pin.png"/>
                 <img id='pin3' src="/map_pin.png"/>
                 <img id='second' src="/mapdemo.png"/>
+                <div className="list-animation">
+                    <div id='item1'>King's Palace Cafe</div>
+                    <div id='item2'>Blue's Hall</div>
+                    <div id='item3'>Rum Boogie Cafe</div>
+                </div>
             </div>
         </div>
     )
