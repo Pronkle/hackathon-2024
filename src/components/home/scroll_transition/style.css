@@ -36,6 +36,8 @@
 
         #pin1 {
             position: absolute;
+            transform: translate(0, -50px);
+            opacity: 0;
             top: 43vh;
             left: 11vw;
             width: 2vw;
@@ -43,6 +45,8 @@
 
         #pin2 {
             position: absolute;
+            transform: translate(0, -50px);
+            opacity: 0;
             top: 47vh;
             left: 20vw;
             width: 2vw;
@@ -50,6 +54,8 @@
 
         #pin3 {
             position: absolute;
+            transform: translate(0, -50px);
+            opacity: 0;
             top: 57vh;
             left: 43vw;
             width: 2vw;

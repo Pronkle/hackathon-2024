@@ -43,42 +43,45 @@ export default function ScrollTransition() {
                 duration: 3
             })
 
-            gsap.from('#pin1', {
+            gsap.to('#pin1', {
                 scrollTrigger: {
                     trigger: '.map-holder',
                     start: "top top",
+                    end: "+=100px",
                     toggleActions: "restart",
-                    markers: true
+                    markers: true,
+                    scrub: true
                 },
-                transform: "translate(0, -50px)",
-                opacity: 0,
-                duration: 0.2,
+                transform: "translate(0, 0px)",
+                opacity: 1,
                 ease: "none",
             }, )
 
-            gsap.from('#pin2', {
+            gsap.to('#pin2', {
                 scrollTrigger: {
                     trigger: '.map-holder',
                     start: "top top",
+                    end: "+=500px",
                     toggleActions: "restart",
-                    markers: true
+                    markers: true,
+                    scrub: true
                 },
-                transform: "translate(0, -50px)",
-                opacity: 0,
-                duration: 0.5,
+                transform: "translate(0, 0px)",
+                opacity: 1,
                 ease: "none",
             }, )
 
-            gsap.from('#pin3', {
+            gsap.to('#pin3', {
                 scrollTrigger: {
                     trigger: '.map-holder',
                     start: "top top",
+                    end: "+=900px",
                     toggleActions: "restart",
-                    markers: true
+                    markers: true,
+                    scrub: true
                 },
-                transform: "translate(0, -50px)",
-                opacity: 0,
-                duration: 0.8,
+                transform: "translate(0, 0px)",
+                opacity: 1,
                 ease: "none",
             }, )
         });
