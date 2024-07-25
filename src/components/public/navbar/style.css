@@ -1,0 +1,23 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#link {
+    background:none; 
+    border:none;
+
+    font-size: 24px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    transition: 0.5s;
+    text-decoration: none;
+    color: black
+}
+
+#link:hover {
+    color: red
+}
