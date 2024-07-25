@@ -7,10 +7,13 @@ import { Link, ScrollRestoration } from "react-router-dom"
 
 export default function Navbar() {
 
+  
+
   useEffect(() => {
     var prevScroll = 0;
     var currentScroll = 0;
-    window.addEventListener('scroll', () => {
+
+    const handleScroll = () => {
       currentScroll = window.scrollY;
       if (prevScroll > currentScroll) {
         document.getElementById("navbar").style.top = "0";
@@ -18,7 +21,10 @@ export default function Navbar() {
         document.getElementById("navbar").style.top = "-50px";
       }
       prevScroll = currentScroll
-    })
+    }
+    window.addEventListener('scroll', handleScroll)
+
+    return () => {window.removeEventListener('scroll', handleScroll)}
   }, [])
     
     

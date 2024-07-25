@@ -1,6 +1,9 @@
 import './home.css';
 import { useEffect } from 'react';
 
+import Navbar from '../../components/home/navbar/navbar';
+
+
 export default function Home() {
 
     useEffect(() => {
@@ -9,6 +12,10 @@ export default function Home() {
 
     return (
         <div>
+            <Navbar/>
+            <div className="home-section">
+
+            </div>
             Hi from Home
         </div>
     )
