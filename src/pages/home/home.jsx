@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 import Navbar from '../../components/home/navbar/navbar';
 import ScrollTransition from '../../components/home/scroll_transition/scrollTrans';
 import About from '../../components/home/about/about';
+import Credit from '../../components/home/credits/credits';
 
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
             <div className="home-section">
                 <ScrollTransition/>
                 <About/>
+                <Credit/>
             </div>
         </div>
     )

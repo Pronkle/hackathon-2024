@@ -1,5 +1,13 @@
 .about-section {
     width: 100vw;
-    height: 100vh;
+    height: 300vh;
     background-color: white;
+}
+
+.about-info {
+    padding-top: 20vh;
+    align-items: center;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
 }

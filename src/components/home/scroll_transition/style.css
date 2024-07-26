@@ -87,7 +87,7 @@
 
     .bg2 {
         position: relative;
-        background-image: linear-gradient(#250c00, #141414);
+        background-image: linear-gradient(#250c00, #262626, #262626);
         height: 300vh;
         width: 100vw;
         z-index: -5;

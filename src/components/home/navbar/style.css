@@ -8,6 +8,7 @@
     transition: top 0.3s; /* Transition effect when sliding down (and up) */
 
     background-color: #ffffff;
+    border-bottom: 2px solid black;
 }
 
 #link {
