@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import QuestionComp from "./questioncomp";
-import question from "./question";
+import question from "./questiondata";
 import { Link } from "react-router-dom";
  
 const Questions = ({ answer, setAnswer }) => {
