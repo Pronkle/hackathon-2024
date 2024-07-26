@@ -36,10 +36,6 @@ export default function Credit() {
                 </div>
             </div>
 
-            {/* <div className="footer">
-                <div
-            </div> */}
-
         </div>
     )
 }
