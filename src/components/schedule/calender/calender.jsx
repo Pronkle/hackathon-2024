@@ -16,6 +16,7 @@ export default function Calender() {
         fetch("https://jsonplaceholder.typicode.com/todos")
             .then((response) => response.json())
             .then((json) => {
+                console.log(json)
                 setTuesday(json.filter((task) => task.completed));
                 setMonday(json.filter((task) => !task.completed));
             });
@@ -135,8 +136,9 @@ export default function Calender() {
                     justifyContent: "space-between",
                     alignItems: "center",
                     flexDirection: "row",
-                    width: "90vw",
+                    width: "95vw",
                     right: 0,
+                    paddingLeft: "4vw",
                     margin: "0 auto"
                 }}
             >
