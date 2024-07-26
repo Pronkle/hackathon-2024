@@ -1,16 +1,22 @@
 .column {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-    overflow-y: scroll;
 
-    background-color: #f4f5f7;
     border-radius: 2.5px;
     width: 400px;
-    height: 900px;
-    overflow-y: scroll;
+    height: 80vh;
     -ms-overflow-style: none;
     scrollbar-width: none;
-    border: 1px solid gray;
+    border-right: 1px solid gray;
+}
+.column:last-child {
+    border: 0px solid gray;
+}
+
+#column-content {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-y:hidden;
+    height: 70vh;
+
 }
 
 .column::-webkit-scrollbar {
@@ -20,7 +26,13 @@
 .column-list {
     padding: 3px;
     transition: background-color 0.2s ease;
-    background-color: #f4f5f7;
     flex-grow: 1;
-    min-height: 100px;
+    height: 80vh;
+}
+
+
+#column-title {
+    position: "absolute";
+    top: "0";
+    height: 5vh;
 }
