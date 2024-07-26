@@ -1,6 +1,6 @@
 .Menu{
     height: 100vh;
-    width: 130px;
+    width: 50px;
     background-color: #0d80dd;
 }
 
@@ -15,7 +15,7 @@
 }
 
 .Menulist .row{
-    width:130px;
+    width:50px;
     height:60px;
     list-style-type: none;
     display: flex;
@@ -32,11 +32,7 @@
     background-color: darkblue;
 }
 .row #icon{
-    flex:30%;
+    flex:100%;
     display:grid;
     place-items: center;
-}
-
-.row #title{
-    flex:70%
 }

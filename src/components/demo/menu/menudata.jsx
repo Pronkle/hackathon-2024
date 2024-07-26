@@ -6,22 +6,22 @@ import QuizIcon from '@mui/icons-material/Quiz';
 
 export const Menudata = [
     {
-        title: "Home",
+        title: "",
         icon: <HomeRoundedIcon></HomeRoundedIcon>,
         link: "/"
     },
     {
-        title: "MySchedule",
+        title: "",
         icon: <EventAvailableIcon></EventAvailableIcon>,
         link: "/schedule"
     },
     {
-        title: "Lessons",
+        title: "",
         icon: <SchoolIcon></SchoolIcon>,
         link: "/lesson"
     },
     {
-        title: "MyDiagnostic",
+        title: "",
         icon: <QuizIcon></QuizIcon>,
         link: "/diagnostic"
     }
