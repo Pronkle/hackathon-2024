@@ -1,0 +1,18 @@
+#info{
+    font-size: x-large;
+}
+
+#header{
+    background-image: linear-gradient(blue, violet);
+    height: 225px;
+    font-size: 150px;
+    /*font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    color: white;
+}
+
+#info{
+    padding-top: 15px;
+    font-size: 25px;
+    color: white;
+    background-color: black;
+}
