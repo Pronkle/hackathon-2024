@@ -1,6 +1,7 @@
 import './schedule.css';
 import { useEffect } from 'react';
 import Menu from '../../components/demo/menu/menu';
+import Calender from '../../components/schedule/calender/calender';
 
 export default function Schedule() {
 
@@ -17,23 +18,7 @@ export default function Schedule() {
                 <button id="generate"></button>
             </div>
 
-            <div className="calender">
-                <div id="day1">
-                    <button className='regenerate'></button>
-                </div>
-                <div id="day2">
-                    <button className='regenerate'></button>
-                </div>
-                <div id="day3">
-                    <button className='regenerate'></button>
-                </div>
-                <div id="day4">
-                    <button className='regenerate'></button>
-                </div>
-                <div id="day5">
-                    <button className='regenerate'></button>
-                </div>
-            </div>
+            <Calender/>
         </div>
     )
 }
