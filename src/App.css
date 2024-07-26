@@ -16,7 +16,7 @@ html body {
 
 .App {
   text-align: center;
-  min-height: 200vh;
+  min-height: 100vh;
   max-width: 100%;
   overflow-x: hidden;
   

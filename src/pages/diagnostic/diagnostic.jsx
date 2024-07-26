@@ -4,6 +4,7 @@ import Menu from '../../components/demo/menu/menu';
 import { DiagnosticData } from './diagnosticdata';
 import * as React from 'react';
 import Questions from '../../components/diagnostic/questions';
+import Start from './start';
 
 export default function Diagnostic() {
 
@@ -18,12 +19,9 @@ export default function Diagnostic() {
             <div id='header'>
                 Hi. Let's get started.
             </div>
-            <div id='info'>
-                  Welcome to the Diagnostic, you're going to answer some questions to assess your skills and interests.
-                <Menu />
-            </div>
             <div id='questions'>
-                <Questions/>
+                <Start/>
+                <Menu/>
             </div>
         </div>
     )

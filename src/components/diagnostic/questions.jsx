@@ -5,6 +5,7 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 import FormControl from '@mui/material/FormControl';
 import FormLabel from '@mui/material/FormLabel';
 import { DiagnosticData } from '../../pages/diagnostic/diagnosticdata';
+import './style.css'
 
 export default function Questions() {
 
@@ -13,12 +14,12 @@ export default function Questions() {
     };
 
     return (
-        <ul className="QuestionList">
+        <div className="QuestionList">
             {DiagnosticData.map((val, key) => {
                 return (
-                    <li
+                    <div
                         key={key}
-                        className="row"
+                        className="questions"
                         onClick={(event) => {}}
                     >
                         <div id="title">{val.title}</div>
@@ -30,7 +31,6 @@ export default function Questions() {
                                 name="radio-buttons-group"
                             >
                                 {val.Answers.map((ans) => {
-                                    console.log(ans)
                                     return (
                                         <FormControlLabel 
                                             value={ans} 
@@ -43,9 +43,9 @@ export default function Questions() {
                                 })}
                             </RadioGroup>
                         </FormControl>
-                    </li>
+                    </div>
                 );
             })}
-        </ul>
+        </div>
     );
 }
