@@ -5,6 +5,7 @@ import Diagnostic from "./pages/diagnostic/diagnostic"
 import Schedule from "./pages/schedule/schedule"
 import Lesson from "./pages/lesson/lesson"
 import Start from "./pages/diagnostic/start"
+import Questions from "./pages/diagnostic/questions"
 
 import './App.css'
 import { useEffect } from "react"
@@ -20,6 +21,7 @@ function App() {
           <Route path="/schedule" element={<Schedule/>}/>
           <Route path="/lesson" element={<Lesson/>}/>
           <Route path="/start" element={<Start/>}/>
+          <Route path="/questions" element={<Questions/>}/>
         </Routes>
     </div>
 
