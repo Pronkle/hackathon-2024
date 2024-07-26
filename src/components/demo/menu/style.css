@@ -33,6 +33,7 @@
     cursor:pointer;
     background-color: #c6e5f8;
     color: #130466;
+    border-radius: 100px;
 }
 .row #icon{
     flex:100%;
