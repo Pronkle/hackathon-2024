@@ -15,7 +15,7 @@ export default function Start() {
         <div className="row box">
             <p>Try your best on this diagnostic!</p>
             <p>Click to begin.</p>
-            <Link to="/questions">
+            <Link to="/test">
               <button className="Startbutton">Start the Quiz</button>
             </Link>
         </div>
