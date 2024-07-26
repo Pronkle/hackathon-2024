@@ -77,6 +77,40 @@ export default function ScrollTransition() {
                 ease: "none",
             })
 
+            gsap.from('#info1', {
+                scrollTrigger: {
+                    trigger: '#info1',
+                    start: "top center",
+                    end: "+=500",
+                    scrub: true,
+                    pin: '#info1',
+                },
+                opacity: 0,
+                transform: "translate(0, 100px)",
+            })
+            gsap.from('#info2', {
+                scrollTrigger: {
+                    trigger: '#info2',
+                    start: "top center",
+                    end: "+=500",
+                    scrub: true,
+                    pin: '#info2',
+                },
+                opacity: 0,
+                transform: "translate(0, 100px)",
+            })
+            gsap.from('#info3', {
+                scrollTrigger: {
+                    trigger: '#info3',
+                    start: "top center",
+                    end: "+=500",
+                    scrub: true,
+                    pin: '#info3',
+                },
+                opacity: 0,
+                transform: "translate(0, 100px)",
+            })
+
         });
         return () => ctx.revert(); // <- cleanup!
       }, []);
@@ -101,6 +135,11 @@ export default function ScrollTransition() {
             <div className="animation2">
                 <div id="view-window">
                     <div id="second"></div>
+                </div>
+                <div className="info-slides">
+                    <div id="info1">asdf</div>
+                    <div id="info2">asdf</div>
+                    <div id="info3">asdf</div>
                 </div>
             </div>
             </div>
