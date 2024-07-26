@@ -30,7 +30,7 @@ const Questions = ({ answer, setAnswer }) => {
     <div className="container mb-5">
       <div className="row"> 
         <div className="col-12"> 
-          <QuestionData QuestionAns={QuestionAns[number]} handleAnswer={handleAnswer} />
+          <QuestionAns question={QuestionData[number]} handleAnswer={handleAnswer} />
           <div className="buttons">
           <button class="btn btn-primary px-4 py-2 fw-bold" onClick={handleDecrement}> Prev</button>
           {show ? (
