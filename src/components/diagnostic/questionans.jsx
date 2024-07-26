@@ -1,7 +1,7 @@
 //C:\react-js\myreactdev\src\components\QuestionComp.js
 import React from "react";
  
-const QuestionComp = ({ question, handleAnswer }) => {
+const QuestionAns = ({ question, handleAnswer }) => {
   const { title, options, id } = question;
   return (
     <div className="question">
@@ -29,4 +29,4 @@ const QuestionComp = ({ question, handleAnswer }) => {
   );
 };
  
-export default QuestionComp;
+export default QuestionAns;

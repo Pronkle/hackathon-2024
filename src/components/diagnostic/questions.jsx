@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import QuestionComp from "./questioncomp";
-import question from "./questiondata";
+import QuestionAns from "./questionans";
+import QuestionData from "./questiondata";
 import { Link } from "react-router-dom";
  
 const Questions = ({ answer, setAnswer }) => {
@@ -14,7 +14,7 @@ const Questions = ({ answer, setAnswer }) => {
   };
  
   const handleIncrement = () => {
-    if (number === 4) {
+    if (number === 9) {
       alert("This is a Last questions");
       setShow(false)
       return;
@@ -30,7 +30,7 @@ const Questions = ({ answer, setAnswer }) => {
     <div className="container mb-5">
       <div className="row"> 
         <div className="col-12"> 
-          <QuestionComp question={question[number]} handleAnswer={handleAnswer} />
+          <QuestionData QuestionAns={QuestionAns[number]} handleAnswer={handleAnswer} />
           <div className="buttons">
           <button class="btn btn-primary px-4 py-2 fw-bold" onClick={handleDecrement}> Prev</button>
           {show ? (

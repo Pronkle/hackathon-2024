@@ -1,4 +1,5 @@
 import React from 'react'
 
-export const QuestionData = [
+const QuestionData = [
 ]
+export default QuestionData
