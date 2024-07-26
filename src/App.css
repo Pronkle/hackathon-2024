@@ -1,6 +1,23 @@
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+html {
+  /* this makes sure the padding and the border is included in the box sizing */
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+html body {
+  padding: 0;
+  margin: 0;
+  overflow-x: inherit;
+}
+
 .App {
   text-align: center;
   min-height: 200vh;
+  max-width: 100%;
   overflow-x: hidden;
   
 }

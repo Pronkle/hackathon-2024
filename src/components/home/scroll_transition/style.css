@@ -1,37 +1,118 @@
 .scroll-transition-section {
-    min-height: 500vh;
+    min-height: 1000vh;
 
-    #first {
-        position: absolute;
-        max-height: 90vh;
-        width: 85vw;
+    .bg1 {
+        position: relative;
+        height: 300vh;
+        width: 100vw;
+        z-index: -4;
+    }
+
+    .animation1 {
+        padding-top: 30px;
+        position: relative;
+        height: 90vh;
+        width: 100vw;
         left: 0; 
         right: 0; 
         margin-left: auto; 
         margin-right: auto; 
     }
-    
 
-    .map-holder {
-        padding-top: 50px;
+    #first {
+        scale: 0.4;
+        padding-top: 30px;
+        position: absolute;
+        height: 90vh;
+        width: 60vw;
+        left: 0; 
+        right: 0; 
+        bottom: 0;
+        margin-left: auto; 
+        margin-right: auto; 
+        z-index: -2;
+        transform-origin: bottom center;
+    }
+
+
+    .ground * {
+        height: 22vh;
+        width: 100vw;
+        margin: 0;
+    }
+    .ground {
+        position: absolute;
+        height: 22vh;
+        width: 400vw;
+        top: 82vh;
+        left: 0; 
+        margin-left: auto; 
+        margin-right: auto; 
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        z-index: -3;
+
+        #summer {
+            background-image: -webkit-linear-gradient(-50deg, #26a100 10%, #005c1c 70%, #755000 20%);
+            mask: radial-gradient(15px at bottom,#0000 98%,#000) 50% / 30.00px 100%;
+        }
+        #fall {
+            background-image: -webkit-linear-gradient(-50deg, #755000 10%, #c07d00 70%, #8d8068 20%);
+            mask: radial-gradient(15px at bottom,#0000 98%,#000) 50% / 30.00px 100%;
+            transform: translate(-1px, 0);
+        }
+        #winter {
+            background-image: -webkit-linear-gradient(-50deg, #8d8068 10%, #cadfe0 70%, #8dc798 20%);
+            mask: radial-gradient(15px at bottom,#0000 98%,#000) 50% / 30.00px 100%;
+            transform: translate(-2px, 0);
+
+        }
+        #spring {
+            background-image: -webkit-linear-gradient(-50deg, #8dc798 10%, #008321 70%, #26a100 20%);
+            mask: radial-gradient(15px at bottom,#0000 98%,#000) 50% / 30.00px 100%;
+            transform: translate(-3px, 0);
+
+        }
+    }
+
+    .bg2 {
         position: relative;
-        top: 90vh;
-        max-height: 90vh;
+        background-image: linear-gradient(#250c00, #141414);
+        height: 300vh;
+        width: 100vw;
+        z-index: -5;
+    }
+
+    .animation2 {
+        position: relative;
         width: 85vw;
         left: 0; 
         right: 0; 
         margin-left: auto; 
         margin-right: auto; 
 
+        #view-window {
+            position: absolute;
+            height: 110vh;
+            width: 85vw;
+            left: 0; 
+            right: 0; 
+            transform-origin: top center;
+            overflow-y: hidden;
+        }
+
         #second {
             position: absolute;
-            height: 90vh;
-            width: 85vw;
+            height: 320vh;
+            width: 1vw;
             left: 0; 
             right: 0; 
             margin-left: auto; 
             margin-right: auto; 
             z-index: -1;
+            background-image: linear-gradient(#250c00, rgb(15, 0, 148), rgb(147, 141, 206), white, white);
         }
 
         #pin1 {

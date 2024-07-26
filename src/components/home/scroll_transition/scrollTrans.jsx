@@ -1,6 +1,6 @@
 import React, { useLayoutEffect, useState } from "react"
 import { gsap } from 'gsap'
-import { ScrollTrigger } from "gsap/all"
+import { ScrollTrigger, CustomEase } from "gsap/all"
 
 import "./style.css"
 
@@ -12,73 +12,71 @@ export default function ScrollTransition() {
     useLayoutEffect(() => {
         let ctx = gsap.context(() => {
             gsap.registerPlugin(ScrollTrigger)
+
+            const groundTimeline = gsap.timeline({
+                scrollTrigger: {
+                    trigger: '.bg1',
+                    start: "top top",
+                    end: "bottom bottom",
+                    scrub: true,
+                    pin: ".ground",
+                    pinSpacing: false,
+                    snap: {
+                        snapTo: 'labels', // snap to the closest label in the timeline
+                        duration: { min: 1, max: 1 }, // the snap animation should be at least 0.2 seconds, but no more than 3 seconds (determined by velocity)
+                        ease: "elastic.out" // the ease of the snap animation ("power3" by default)
+                    }
+                }
+            })
         
+            groundTimeline.addLabel('summer-fall')
+                .fromTo('.ground', { transform: "translate(0, 0)" }, { transform: "translate(-100vw, 0)" })
+                .addLabel('fall-winter')
+                .fromTo('.ground', { transform: "translate(-100vw, 0)" }, { transform: "translate(-200vw, 0)" })
+                .addLabel('winter-spring')
+                .fromTo('.ground', { transform: "translate(-200vw, 0)" }, { transform: "translate(-300vw, 0)" })
+                
+
             gsap.to('#first', {
                 scrollTrigger: {
-                    trigger: '#first',
+                    trigger: '.bg1',
                     start: "top top",
-                    end: "+=500",
+                    end: "bottom bottom",
                     scrub: true,
-                    pin: true,
+                    pin: "#first",
                     pinSpacing: false,
                 },
-                scale: 0.9,
-                opacity: 0,
+                scale: 1,
+                transform: "translate(-70px, 55px)",
                 ease: "none",
-                duration: 3
             })
 
-            gsap.to('.map-holder', {
+            gsap.from('#view-window', {
                 scrollTrigger: {
-                    trigger: '.map-holder',
+                    trigger: '.animation2',
                     start: "top top",
-                    end: "+=2000",
-                    scrub: true,
-                    pin: true,
+                    end: "+=1900",
+                    scrub: 2,
+                    pin: '#view-window',
                     pinSpacing: false,
                 },
+                scaleY: 0,
                 ease: "none",
-                duration: 3
             })
 
-            gsap.to('#pin1', {
+            gsap.to('#second', {
                 scrollTrigger: {
-                    trigger: '.map-holder',
+                    trigger: '.bg2',
                     start: "top top",
-                    end: "+=100px",
-                    toggleActions: "restart",
-                    scrub: true
+                    end: "bottom bottom",
+                    scrub: true,
+                    // pin: '#second',
+                    pinSpacing: false,
                 },
-                transform: "translate(0, 0px)",
-                opacity: 1,
+                transform: "translate(0, -150vh)",
                 ease: "none",
-            }, )
+            })
 
-            gsap.to('#pin2', {
-                scrollTrigger: {
-                    trigger: '.map-holder',
-                    start: "top top",
-                    end: "+=500px",
-                    toggleActions: "restart",
-                    scrub: true
-                },
-                transform: "translate(0, 0px)",
-                opacity: 1,
-                ease: "none",
-            }, )
-
-            gsap.to('#pin3', {
-                scrollTrigger: {
-                    trigger: '.map-holder',
-                    start: "top top",
-                    end: "+=900px",
-                    toggleActions: "restart",
-                    scrub: true
-                },
-                transform: "translate(0, 0px)",
-                opacity: 1,
-                ease: "none",
-            }, )
         });
         return () => ctx.revert(); // <- cleanup!
       }, []);
@@ -86,18 +84,27 @@ export default function ScrollTransition() {
 
     return (
         <div className="scroll-transition-section">
-            <img id='first' src="/Memphis.jpg"/>
-            <div className="map-holder">
-                <img id='pin1' src="/map_pin.png"/>
-                <img id='pin2' src="/map_pin.png"/>
-                <img id='pin3' src="/map_pin.png"/>
-                <img id='second' src="/mapdemo.png"/>
-                <div className="list-animation">
-                    <div id='item1'>King's Palace Cafe</div>
-                    <div id='item2'>Blue's Hall</div>
-                    <div id='item3'>Rum Boogie Cafe</div>
+            <div className="bg1">
+
+                <div className="animation1">
+                    <img id='first' src="/braintree.png"/>
+                    <div className="ground">
+                        <div id='summer'></div>
+                        <div id='fall'></div>
+                        <div id='winter'></div>
+                        <div id='spring'></div>
+                    </div>
                 </div>
             </div>
+            
+            <div className="bg2">
+            <div className="animation2">
+                <div id="view-window">
+                    <div id="second"></div>
+                </div>
+            </div>
+            </div>
+
         </div>
     )
 
