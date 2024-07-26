@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import QuestionAns from "./questionans";
 import QuestionData from "./questiondata";
 import { Link } from "react-router-dom";
@@ -6,6 +6,10 @@ import { Link } from "react-router-dom";
 const Questions = ({ answer, setAnswer }) => {
   const [number, setNumber] = useState(0);
   const [show, setShow] = useState(true);
+  
+  useEffect(() => {
+    
+  }, [])
  
   const handleAnswer = (id, ans) => {
     let temp = [...answer]; 
@@ -32,12 +36,12 @@ const Questions = ({ answer, setAnswer }) => {
         <div className="col-12"> 
           <QuestionAns question={QuestionData[number]} handleAnswer={handleAnswer} />
           <div className="buttons">
-          <button class="btn btn-primary px-4 py-2 fw-bold" onClick={handleDecrement}> Prev</button>
+          <button className="btn btn-primary px-4 py-2 fw-bold" onClick={handleDecrement}> Prev</button>
           {show ? (
-            <button class="btn btn-success px-4 py-2 fw-bold" onClick={handleIncrement}> Next</button>
+            <button className="btn btn-success px-4 py-2 fw-bold" onClick={handleIncrement}> Next</button>
           ) : (
             <Link to="/solution">
-              <button class="btn btn-info px-4 py-2 fw-bold">Submit</button>
+              <button className="btn btn-info px-4 py-2 fw-bold">Submit</button>
             </Link>
           )}
           </div>

@@ -36,7 +36,7 @@
     flex-direction: column;
 }
 
-.box {
+.row_box {
     border-color: blue;
     border-style: solid;
     text-align: center;
@@ -49,7 +49,7 @@
     align-items: center;
     justify-content: center;
 }
-.box p {
+.row_box p {
     font-size: 30px;
     font-weight: bold;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;

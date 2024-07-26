@@ -11,7 +11,6 @@ export default function Diagnostic() {
     // fix scroll persistence issue when navigating with routes
     useEffect(() => {
         window.scrollTo(0, 0)
-        console.log(DiagnosticData.Answers)
     }, [])
 
     return (

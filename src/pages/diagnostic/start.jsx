@@ -12,7 +12,7 @@ export default function Start() {
 
     return (
     <div className="welcome_box">
-        <div className="row box">
+        <div className="row_box">
             <p>Try your best on this diagnostic!</p>
             <p>Click to begin.</p>
             <Link to="/test">
