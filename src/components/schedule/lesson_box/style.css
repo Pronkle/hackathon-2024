@@ -1,0 +1,21 @@
+#lessonBox-container {
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 2px grey;
+    padding: 8px;
+    color: #000;
+    margin-bottom: 8px;
+    min-height: 120px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: yellow;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.lessonBox-icons {
+    display: flex;
+    justify-content: end;
+    padding: 2px;
+}
