@@ -4,13 +4,13 @@ import Menu from '../../components/demo/menu/menu';
 import OpenAI from "openai";
 
 
-const API_KEY = process.env.API_KEY
+const API_KEY = process.env.REACT_APP_API_KEY
 
 
 export default function Lesson() {
 
     console.log(API_KEY)
-    const openai = new OpenAI({apiKey: API_KEY});
+    const openai = new OpenAI({apiKey: API_KEY, dangerouslyAllowBrowser: true});
 
 
     const handleSubmit = async (prompt) => {
