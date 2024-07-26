@@ -1,5 +1,6 @@
 import './schedule.css';
 import { useEffect } from 'react';
+import Menu from '../../components/demo/menu/menu';
 
 export default function Schedule() {
 
@@ -11,6 +12,7 @@ export default function Schedule() {
     return (
         <div>
             Hi from Schedule
+            <Menu/>
         </div>
     )
 }

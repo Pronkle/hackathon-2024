@@ -1,5 +1,6 @@
 import './lesson.css';
 import { useEffect } from 'react';
+import Menu from '../../components/demo/menu/menu';
 
 export default function Lesson() {
 
@@ -11,6 +12,7 @@ export default function Lesson() {
     return (
         <div>
             Hi from Lesson
+            <Menu/>
         </div>
     )
 }

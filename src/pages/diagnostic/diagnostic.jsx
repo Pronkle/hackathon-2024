@@ -1,5 +1,6 @@
 import './diagnostic.css';
 import { useEffect } from 'react';
+import Menu from '../../components/demo/menu/menu';
 
 export default function Diagnostic() {
 
@@ -11,6 +12,7 @@ export default function Diagnostic() {
     return (
         <div>
             Hi from Diagnostic
+            <Menu/>
         </div>
     )
 }

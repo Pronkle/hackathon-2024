@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 import Navbar from '../../components/home/navbar/navbar';
 import ScrollTransition from '../../components/home/scroll_transition/scrollTrans';
 import About from '../../components/home/about/about';
-
+import Menu from '../../components/demo/menu/menu';
 
 export default function Home() {
 
