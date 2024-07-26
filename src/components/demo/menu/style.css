@@ -1,7 +1,9 @@
 .Menu{
+    position: absolute;
+    top: 0;
     height: 100vh;
     width: 50px;
-    background-color: #0d80dd;
+    background-image: linear-gradient(#130466, #c6e5f8);
 }
 
 .Menulist{
@@ -9,10 +11,10 @@
     padding: 0;
     width: 100%;
 }
-
+/* 
 .Menulist #active{
-    background-color: darkblue;
-}
+    background-color: d;
+} */
 
 .Menulist .row{
     width:50px;
@@ -29,7 +31,8 @@
 
 .Menulist .row:hover{
     cursor:pointer;
-    background-color: darkblue;
+    background-color: #c6e5f8;
+    color: #130466;
 }
 .row #icon{
     flex:100%;
