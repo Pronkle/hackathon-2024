@@ -135,7 +135,8 @@ export default function Calender() {
                     justifyContent: "space-between",
                     alignItems: "center",
                     flexDirection: "row",
-                    width: "1300px",
+                    width: "90vw",
+                    right: 0,
                     margin: "0 auto"
                 }}
             >
