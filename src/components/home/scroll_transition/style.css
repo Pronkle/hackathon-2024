@@ -2,13 +2,10 @@
 
     .title-container {
         position: absolute;
-        display: flex;
-        flex-flow: row;
         margin-left: 5vw;
     }
-    .title-container * {
-        margin: 1vw;
-        font-size: 7vw;
+    #title1 {
+        width: 500px;
     }
 
     .bg1 {

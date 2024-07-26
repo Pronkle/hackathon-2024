@@ -16,10 +16,6 @@ export default function ScrollTransition() {
             gsap.from("#title1", {
                 transform: "translate(0, -100px)"
             })
-            gsap.from("#title3", {
-                transform: "translate(0, -100px)",
-                delay: 0.1
-            })
 
             gsap.to(".title-container", {
                 scrollTrigger: {
@@ -139,9 +135,10 @@ export default function ScrollTransition() {
     return (
         <div className="scroll-transition-section">
             <div className="title-container">
-                <h1 id="title1">Flex</h1>
+                <img id="title1" src="/flexed_logo.png"/>
+                {/* <h1 id="title1">Flex</h1>
                 <h1 id="title2">•</h1>
-                <h1 id="title3">Ed</h1>
+                <h1 id="title3">Ed</h1> */}
             </div>
 
             <div className="bg1">
