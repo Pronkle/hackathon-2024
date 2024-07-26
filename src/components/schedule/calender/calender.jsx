@@ -4,6 +4,8 @@ import { gsap } from 'gsap'
 import { ScrollTrigger, CustomEase } from "gsap/all"
 import Column from "../column/column";
 
+import "./style.css"
+
 
 export default function Calender() {
     const [monday, setMonday] = useState([]);
@@ -13,13 +15,12 @@ export default function Calender() {
     const [friday, setFriday] = useState([]);
 
     useEffect(() => {
-        fetch("https://jsonplaceholder.typicode.com/todos")
-            .then((response) => response.json())
-            .then((json) => {
-                console.log(json)
-                setTuesday(json.filter((task) => task.completed));
-                setMonday(json.filter((task) => !task.completed));
-            });
+        setTuesday([
+            {
+                id: 1,
+                title: "asdf"
+            }
+        ])
     }, []);
 
     const handleDragEnd = (result) => {
@@ -33,7 +34,7 @@ export default function Calender() {
             reorderState(source.droppableId, source.index, destination.index)
         } else {
             deletePreviousState(source.droppableId, draggableId);
-            const task = findItemById(draggableId, [...monday, ...tuesday, ...wednesday, ...thursday]);
+            const task = findItemById(draggableId, [...monday, ...tuesday, ...wednesday, ...thursday, ...friday]);
             setNewState(destination.droppableId, task, destination.index);
         }
 
@@ -86,7 +87,7 @@ export default function Calender() {
             case "4":
                 setThursday(removeItemById(taskId, thursday));
                 break;
-                case "4":
+            case "5":
                 setFriday(removeItemById(taskId, friday));
                 break;
         }
@@ -128,7 +129,10 @@ export default function Calender() {
 
     return (
         <DragDropContext onDragEnd={handleDragEnd}>
-            <h2 style={{ textAlign: "center" }}>Schedule</h2>
+            <div className="schedule-controls">
+                <h1 id="schedule-title">Schedule</h1>
+                <button id="generate"></button>
+            </div>
 
             <div
                 style={{

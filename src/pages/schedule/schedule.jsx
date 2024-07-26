@@ -13,10 +13,6 @@ export default function Schedule() {
     return (
         <div className='schedule'>
             <Menu/>
-            <div className="schedule-controls">
-                <h1 id="schedule-title"></h1>
-                <button id="generate"></button>
-            </div>
 
             <Calender/>
         </div>

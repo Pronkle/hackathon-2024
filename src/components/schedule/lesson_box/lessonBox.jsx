@@ -20,9 +20,7 @@ export default function LessonBox({ task, index }) {
               </small>
             </span>
                     </div>
-                    <div
-                        style={{ display: "flex", justifyContent: "center", padding: 2 }}
-                    >
+                    <div style={{ display: "flex", justifyContent: "center", padding: 2 }}>
                         <div>{task.title}</div>
                     </div>
                     <div className="lessonBox-icons">

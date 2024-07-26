@@ -1,6 +1,6 @@
 #navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     position: fixed; /* Make it stick/fixed */
     top: 0; /* Stay on top */
     width: 100%; /* Full width */
