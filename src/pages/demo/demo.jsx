@@ -1,5 +1,6 @@
 import './demo.css';
 import { useEffect } from 'react';
+import Menu from '../../components/demo/menu/menu';
 
 export default function Demo() {
 
@@ -9,8 +10,8 @@ export default function Demo() {
     }, [])
 
     return (
-        <div>
-            Hi from Demo
+        <div className = 'Demo'>
+            <Menu/>
         </div>
     )
 }

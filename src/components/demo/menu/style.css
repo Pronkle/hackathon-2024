@@ -1,0 +1,42 @@
+.Menu{
+    height: 100%;
+    width: 130px;
+    background-color: #0d80dd;
+}
+
+.Menulist{
+    height: auto;
+    padding: 0;
+    width: 100%;
+}
+
+.Menulist #active{
+    background-color: darkblue;
+}
+
+.Menulist .row{
+    width:130px;
+    height:60px;
+    list-style-type: none;
+    display: flex;
+    margin: 0%;
+    flex-direction: row;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.Menulist .row:hover{
+    cursor:pointer;
+    background-color: darkblue;
+}
+.row #icon{
+    flex:30%;
+    display:grid;
+    place-items: center;
+}
+
+.row #title{
+    flex:70%
+}
