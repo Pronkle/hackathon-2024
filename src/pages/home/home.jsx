@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 
 import Navbar from '../../components/home/navbar/navbar';
 import ScrollTransition from '../../components/home/scroll_transition/scrollTrans';
+import About from '../../components/home/about/about';
 
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
             <Navbar/>
             <div className="home-section">
                 <ScrollTransition/>
+                <About/>
             </div>
         </div>
     )
