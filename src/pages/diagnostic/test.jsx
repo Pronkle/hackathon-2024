@@ -1,13 +1,14 @@
 import React from 'react'
 import Menu from '../../components/demo/menu/menu'
+import Questions from '../../components/diagnostic/questions'
 
-function Questions() {
+function Test() {
   return (
     <div>
-      diagnosticquestions
+      <Questions/>
       <Menu/>
     </div>
   )
 }
 
-export default Questions
+export default Test

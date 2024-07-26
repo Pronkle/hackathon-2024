@@ -19,7 +19,7 @@ export default function Diagnostic() {
             <div id='header'>
                 Hi. Let's get started.
             </div>
-            <div id='questions'>
+            <div id='test'>
                 <Start/>
                 <Menu/>
             </div>
