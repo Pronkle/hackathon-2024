@@ -9,43 +9,9 @@ import './style.css'
 
 export default function Questions() {
 
-    const stopPropagation = (event) => {
-        event.stopPropagation();
-    };
-
     return (
         <div className="QuestionList">
-            {DiagnosticData.map((val, key) => {
-                return (
-                    <div
-                        key={key}
-                        className="questions"
-                        onClick={(event) => {}}
-                    >
-                        <div id="title">{val.title}</div>
-                        <div id="questions">{val.Question}</div>
-                        <FormControl>
-                            <RadioGroup
-                                aria-labelledby="demo-radio-buttons-group-label"
-                                defaultValue="op1"
-                                name="radio-buttons-group"
-                            >
-                                {val.Answers.map((ans) => {
-                                    return (
-                                        <FormControlLabel 
-                                            value={ans} 
-                                            control={<Radio />} 
-                                            label={ans} 
-                                            key={ans}
-                                            onClick={stopPropagation} // Stop propagation on the label
-                                        />
-                                    )
-                                })}
-                            </RadioGroup>
-                        </FormControl>
-                    </div>
-                );
-            })}
+            
         </div>
     );
 }
