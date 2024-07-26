@@ -13,6 +13,26 @@ export default function ScrollTransition() {
         let ctx = gsap.context(() => {
             gsap.registerPlugin(ScrollTrigger)
 
+            gsap.from("#title1", {
+                transform: "translate(0, -100px)"
+            })
+            gsap.from("#title3", {
+                transform: "translate(0, -100px)",
+                delay: 0.1
+            })
+
+            gsap.to(".title-container", {
+                scrollTrigger: {
+                    trigger: '.bg1',
+                    start: "top top",
+                    end: "+=1000",
+                    scrub: true,
+                    pin: ".title-container",
+                },
+                opacity: 0,
+                transform: "translate(500px, 0)"
+            })
+
             const groundTimeline = gsap.timeline({
                 scrollTrigger: {
                     trigger: '.bg1',
@@ -118,6 +138,12 @@ export default function ScrollTransition() {
 
     return (
         <div className="scroll-transition-section">
+            <div className="title-container">
+                <h1 id="title1">Flex</h1>
+                <h1 id="title2">•</h1>
+                <h1 id="title3">Ed</h1>
+            </div>
+
             <div className="bg1">
 
                 <div className="animation1">

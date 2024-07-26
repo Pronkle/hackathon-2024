@@ -1,6 +1,17 @@
 .scroll-transition-section {
     min-height: 1000vh;
 
+    .title-container {
+        position: absolute;
+        display: flex;
+        flex-flow: row;
+        margin-left: 5vw;
+    }
+    .title-container * {
+        margin: 1vw;
+        font-size: 7vw;
+    }
+
     .bg1 {
         position: relative;
         height: 300vh;
