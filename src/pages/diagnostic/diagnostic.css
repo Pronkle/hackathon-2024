@@ -6,7 +6,7 @@
 
 #header{
     background-image: linear-gradient(#985ad2, #c6e5f8);
-    height: 335px;
+    height: 35vh;
     font-size: 125px;
     /*font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
     color: white;
@@ -21,6 +21,11 @@
     background-color: black;
     border: 0;
     padding: 0;
+}
+
+#questions{
+    background-color: #c6e5f8;
+    height: 65vh;
 }
 
 .welcome_box {
