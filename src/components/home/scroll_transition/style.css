@@ -1,6 +1,7 @@
 .scroll-transition-section {
 
     .title-container {
+        transform: translate(0, -75px);
         position: absolute;
         margin-left: 5vw;
     }

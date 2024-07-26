@@ -26,7 +26,7 @@ export default function ScrollTransition() {
                     pin: ".title-container",
                 },
                 opacity: 0,
-                transform: "translate(500px, 0)"
+                transform: "translate(500px, -75px)"
             })
 
             const groundTimeline = gsap.timeline({
