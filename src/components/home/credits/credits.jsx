@@ -23,7 +23,7 @@ export default function Credit() {
                     <img src=""/>
                 </div>
                 <div id="credit-item">
-                    <h2>Allen Gue - Developer</h2>
+                    <h2>Allen Gue - Assistant Tech Lead</h2>
                     <img src=""/>
                 </div>
                 <div id="credit-item">

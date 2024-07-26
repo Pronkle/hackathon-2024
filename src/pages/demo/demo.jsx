@@ -11,6 +11,7 @@ export default function Demo() {
 
     return (
         <div className = 'Demo'>
+            DEMO
             <Menu/>
         </div>
     )
