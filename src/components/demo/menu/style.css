@@ -1,7 +1,9 @@
 .Menu{
-    height: 100%;
-    width: 130px;
-    background-color: #0d80dd;
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 50px;
+    background-image: linear-gradient(#130466, #c6e5f8);
 }
 
 .Menulist{
@@ -9,13 +11,13 @@
     padding: 0;
     width: 100%;
 }
-
+/* 
 .Menulist #active{
-    background-color: darkblue;
-}
+    background-color: d;
+} */
 
 .Menulist .row{
-    width:130px;
+    width:50px;
     height:60px;
     list-style-type: none;
     display: flex;
@@ -29,14 +31,11 @@
 
 .Menulist .row:hover{
     cursor:pointer;
-    background-color: darkblue;
+    background-color: #c6e5f8;
+    color: #130466;
 }
 .row #icon{
-    flex:30%;
+    flex:100%;
     display:grid;
     place-items: center;
-}
-
-.row #title{
-    flex:70%
 }

@@ -6,6 +6,7 @@ import ScrollTransition from '../../components/home/scroll_transition/scrollTran
 import About from '../../components/home/about/about';
 import Credit from '../../components/home/credits/credits';
 
+import Menu from '../../components/demo/menu/menu';
 
 export default function Home() {
 
