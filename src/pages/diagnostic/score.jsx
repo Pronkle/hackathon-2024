@@ -4,7 +4,7 @@ import Result from "../../components/diagnostic/result";
 import Questions from "../../components/diagnostic/questions";
 
 function Score() {
-const [answer, setAnswer] = useState([]);
+const [answer] = useState([]);
   return (
     <div>
         <div className="Completed">
