@@ -12,9 +12,11 @@ const Questions = ({ answer, setAnswer }) => {
   }, [])
  
   const handleAnswer = (id, ans) => {
+    // console.log(ans)
     let temp = [...answer]; 
     temp[id] = ans;
     setAnswer([...temp]);
+    // console.log(temp)
   };
  
   const handleIncrement = () => {
