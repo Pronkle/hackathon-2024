@@ -1,7 +1,6 @@
 import React, { useLayoutEffect, useEffect, useState } from "react"
 import { DragDropContext } from "react-beautiful-dnd";
 import { gsap } from 'gsap'
-import { ScrollTrigger, CustomEase } from "gsap/all"
 import Column from "../column/column";
 
 import "./style.css"
@@ -16,6 +15,15 @@ export default function Calender({level}) {
     const [wednesday, setWednesday] = useState([]);
     const [thursday, setThursday] = useState([]);
     const [friday, setFriday] = useState([]);
+
+    useLayoutEffect(() => {
+        let ctx = gsap.context(() => {
+          gsap.from("#lessonBox-container", {
+              transform: "translate(0, 200px)"
+          })
+    
+        return () => ctx.revert(); // <- cleanup!
+      })})
 
     const generateSchedule = () => {
         console.log(level)

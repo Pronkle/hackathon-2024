@@ -93,6 +93,10 @@
     background-image: url("../../../public/confetti.jpg");
     height: 300px;
     width: auto;
+    z-index: -1;
+    transform-origin: bottom center;
+    scale: 0;
+    opacity: 0
 }
 
 .Finish_Button{
