@@ -136,9 +136,6 @@ export default function ScrollTransition() {
         <div className="scroll-transition-section">
             <div className="title-container">
                 <img id="title1" src="/flexed_logo.png"/>
-                {/* <h1 id="title1">Flex</h1>
-                <h1 id="title2">•</h1>
-                <h1 id="title3">Ed</h1> */}
             </div>
 
             <div className="bg1">
