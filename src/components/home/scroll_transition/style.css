@@ -9,6 +9,16 @@
         width: 500px;
     }
 
+    #info1{
+        font-size: x-large;
+    }
+    #info2{
+        font-size: x-large;
+    }
+    #info3{
+        font-size: x-large;
+    }
+
     .bg1 {
         position: relative;
         height: 300vh;
