@@ -7,7 +7,7 @@ const Result = ({answer}) => {
     function giveResult(){
         var count = 0;
         console.log(answer)
-        for(let i = 0; i < 10; i++){
+        for(let i = 0; i < 5; i++){
             if(answer[i] === QuestionData[i].ans) count++;
         }
         return count;
@@ -17,7 +17,7 @@ const Result = ({answer}) => {
         <div className="welcome_box">
             <div className="done_box">
                 <div className='Done'>Congrats on Finishing!</div>
-                <div className='Res'>You Scored {giveResult()} / 10</div>
+                <div className='Res'>You Scored {giveResult()} / 5</div>
                 <Link to="/schedule" state={{answer: answer}}>
                     <button className="Finish_Button">View My Schedule</button>
                 </Link>

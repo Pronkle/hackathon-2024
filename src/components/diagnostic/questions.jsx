@@ -45,7 +45,7 @@ const Questions = ({ answer, setAnswer }) => {
   };
  
   const handleIncrement = () => {
-    if (number === 9) {
+    if (number === 4) {
       alert("This is the Last Question");
       setShow(false)
       return;
