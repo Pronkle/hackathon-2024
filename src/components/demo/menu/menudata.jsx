@@ -1,5 +1,5 @@
 import React from 'react'
-import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
+import KeyboardReturnIcon from '@mui/icons-material/KeyboardReturn';
 import EventAvailableIcon from '@mui/icons-material/EventAvailable';
 import SchoolIcon from '@mui/icons-material/School';
 import QuizIcon from '@mui/icons-material/Quiz';
@@ -7,7 +7,7 @@ import QuizIcon from '@mui/icons-material/Quiz';
 export const Menudata = [
     {
         title: "",
-        icon: <HomeRoundedIcon></HomeRoundedIcon>,
+        icon: <KeyboardReturnIcon></KeyboardReturnIcon>,
         link: "/"
     },
     {

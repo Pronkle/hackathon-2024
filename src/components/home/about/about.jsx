@@ -28,8 +28,8 @@ export default function About() {
     return (
         <div className="about-section">
             <div className="about-info">
-                <h1 id="about-title">asdf</h1>
-                <div id="about-description">asdf</div>
+                <h1 id="about-title">Our Promise</h1>
+                <div id="about-description">We aim to provide quality education, free for all, in order to not have another crowdstrike outage lol.</div>
             </div>
         </div>
     )

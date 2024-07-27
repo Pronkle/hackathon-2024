@@ -31,7 +31,6 @@
 .Inquestion{
     background-image: linear-gradient(white, rgb(255, 255, 255));
     height: 100vh;
-
 }
 
 .welcome_box {
@@ -55,6 +54,21 @@
     align-items: center;
     justify-content: center;
 }
+
+.Done{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 100px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.Res{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: gray;
+    margin-bottom: 15px;
+}
+
 .row_box p {
     font-size: 30px;
     font-weight: bold;
@@ -72,4 +86,24 @@
 
 .Diagnostic{
     max-height: 100vh;
+}
+
+.Completed{
+    color: white;
+    background-image: url("../../../public/confetti.jpg");
+    height: 300px;
+    width: auto;
+}
+
+.Finish_Button{
+    border-radius: 10px;
+    background-color: green;
+    color: white;
+    width: 220px;
+    height: 50px;
+    font-weight: bolder;
+    font-size: 22px;
+    border-width: 5px;
+    border-color: green;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }

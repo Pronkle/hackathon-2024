@@ -19,15 +19,15 @@ export default function Credit() {
         <div className="credit-section">
             <div className="people-holder">
                 <div id="credit-item">
-                    <h2>Alan Ji - Tech Lead</h2>
+                    <h2>Alan Ji - Tech Lead 'The Youtuber?'</h2>
                     <img src=""/>
                 </div>
                 <div id="credit-item">
-                    <h2>Allen Gue - Developer</h2>
+                    <h2>Allen Guo - Tech Co-Lead 'Alex Navarro'</h2>
                     <img src=""/>
                 </div>
                 <div id="credit-item">
-                    <h2>Kennedy Jefferson - Design Lead/Ai Trainer</h2>
+                    <h2> Kennedy Jefferson : Ai trainer/ Lead Graphic designer</h2>
                     <img src=""/>
                 </div>
                 <div id="credit-item">

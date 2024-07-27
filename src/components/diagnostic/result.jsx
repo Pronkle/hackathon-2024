@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import QuestionData from './questiondata';
+import "../../pages/diagnostic/diagnostic.css"
 
 const Result = ({answer}) => {
     function giveResult(){
@@ -14,11 +15,11 @@ const Result = ({answer}) => {
 
     return(
         <div className="welcome_box">
-            <div className="row_box">
-                <h2>Congrats on Finishing!</h2>
-                <p>You Scored {giveResult()} / 10</p>
+            <div className="done_box">
+                <div className='Done'>Congrats on Finishing!</div>
+                <div className='Res'>You Scored {giveResult()} / 10</div>
                 <Link to="/schedule" state={{answer: answer}}>
-                    <button className="Finish_Button">MySchedule</button>
+                    <button className="Finish_Button">View My Schedule</button>
                 </Link>
             </div>
         </div>
