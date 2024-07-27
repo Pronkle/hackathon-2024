@@ -15,12 +15,11 @@ export default function Diagnostic() {
 
     return (
         <div className="Diagnostic">
-            <div id='header'>
-                Hi. Let's get started.
+            <div className='Start_Header'>
             </div>
             <div id='test'>
-                <Start/>
-                <Menu/>
+                    <Start/>
+                    <Menu/>
             </div>
         </div>
     )

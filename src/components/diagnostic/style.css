@@ -45,7 +45,10 @@
 .qinfo{
     padding-top: 50px;
     text-align: center;
-    background-color: rgb(195, 225, 246);
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(114, 221, 226);
+    border-style: solid;
+    border-width: 3px;
     border-radius: 10px;
     height: 500px;
     width: 1300px;
