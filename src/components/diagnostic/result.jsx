@@ -17,7 +17,7 @@ const Result = ({answer}) => {
             <div className="row_box">
                 <h2>Congrats on Finishing!</h2>
                 <p>You Scored {giveResult()} / 10</p>
-                <Link to="/schedule">
+                <Link to="/schedule" state={{answer: answer}}>
                     <button className="Finish_Button">MySchedule</button>
                 </Link>
             </div>

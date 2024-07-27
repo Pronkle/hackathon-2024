@@ -3,3 +3,17 @@
     flex-direction: row;
     justify-content: space-evenly;
 }
+
+#generate {
+    background-color: white;
+    border-radius: 25px;
+    transition: 0.2s;
+}
+
+#generate:hover {
+    background-color: rgb(205, 231, 253);
+}
+
+#generate:active {
+    background-color: rgb(223, 205, 253);
+}

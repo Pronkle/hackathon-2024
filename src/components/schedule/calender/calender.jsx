@@ -5,16 +5,26 @@ import { ScrollTrigger, CustomEase } from "gsap/all"
 import Column from "../column/column";
 
 import "./style.css"
+import { useNavigate } from "react-router-dom";
 
 
-export default function Calender() {
+export default function Calender({level}) {
+    const navigate = useNavigate()
+
     const [monday, setMonday] = useState([]);
     const [tuesday, setTuesday] = useState([]);
     const [wednesday, setWednesday] = useState([]);
     const [thursday, setThursday] = useState([]);
     const [friday, setFriday] = useState([]);
 
-    useEffect(() => {
+    const generateSchedule = () => {
+        console.log(level)
+        if (level === null) {
+            navigate("/diagnostic")
+            alert("Please Take a Diagnostic Test First!")
+            return
+        }
+
         setMonday([
             {
                 id: 1,
@@ -27,7 +37,7 @@ export default function Calender() {
         setTuesday([
             {
                 id: 2,
-                title: "Basic Algebra I",
+                title: "Algebra I",
                 subject: "Math",
                 completed: false
             },
@@ -39,7 +49,34 @@ export default function Calender() {
             },
             
         ])
-    }, []);
+    }
+
+    // useEffect(() => {
+    //     setMonday([
+    //         {
+    //             id: 1,
+    //             title: "Language II",
+    //             subject: "Reading",
+    //             completed: false
+    //         },
+    //     ])
+
+    //     setTuesday([
+    //         {
+    //             id: 2,
+    //             title: "Algebra I",
+    //             subject: "Math",
+    //             completed: false
+    //         },
+    //         {
+    //             id: 3,
+    //             title: "Biology I",
+    //             subject: "Science",
+    //             completed: false
+    //         },
+            
+    //     ])
+    // }, []);
 
     const handleDragEnd = (result) => {
         const { destination, source, draggableId } = result;
@@ -143,7 +180,7 @@ export default function Calender() {
         <DragDropContext onDragEnd={handleDragEnd}>
             <div className="schedule-controls">
                 <h1 id="schedule-title">Schedule</h1>
-                <button id="generate"></button>
+                <button id="generate" onClick={generateSchedule}><h1>Generate</h1></button>
             </div>
 
             <div
