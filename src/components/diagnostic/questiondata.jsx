@@ -11,7 +11,7 @@ const QuestionData = [
         id: 1, 
         title: "Demo Question",
         options: ["o1", "o2", "o3", "o4"],
-        ans: "o1"
+        ans: 1
     },
     {
         id: 2, 
