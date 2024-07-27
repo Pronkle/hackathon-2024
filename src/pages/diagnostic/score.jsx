@@ -7,6 +7,9 @@ function Score() {
 const [answer, setAnswer] = useState([]);
   return (
     <div>
+        <div className="Completed">
+            Congrats on being done!
+        </div>
         <Result answer={answer}/>
         <Menu/>
     </div>
