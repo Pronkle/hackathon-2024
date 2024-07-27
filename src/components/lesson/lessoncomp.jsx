@@ -84,7 +84,7 @@ function LessonComp() {
     }
   
     return (
-      <div className="App">
+      <div className="lesson">
         <div style={{ position:"relative", height: "800px", width: "700px"  }}>
           <MainContainer>
             <ChatContainer>       
