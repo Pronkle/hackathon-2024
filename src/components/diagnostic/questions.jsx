@@ -42,7 +42,7 @@ const Questions = ({ answer, setAnswer }) => {
           {show ? (
             <button className="btn btn-success px-4 py-2 fw-bold" onClick={handleIncrement}> Next</button>
           ) : (
-            <Link to="/solution">
+            <Link to="/score">
               <button className="btn btn-info px-4 py-2 fw-bold">Submit</button>
             </Link>
           )}

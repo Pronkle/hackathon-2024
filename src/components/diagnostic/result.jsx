@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import QuestionAns from "./questionans"
+import QuestionData from './questiondata';
 
 const Result = ({answer}) => {
     function giveResult(){
         let count = 0;
-        for(let i = 0; i < 5; i++){
-            if(answer[i] === question[i].ans) count++;
+        console.log(answer)
+        for(let i = 0; i < 10; i++){
+            if(answer[i] === QuestionData[i].ans) count++;
         }
         return count;
     }
