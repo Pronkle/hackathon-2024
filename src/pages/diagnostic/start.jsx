@@ -12,13 +12,10 @@ export default function Start() {
 
     return (
     <div className="welcome_box">
-        <div className="row_box">
-            <p>Try your best on this diagnostic!</p>
-            <p>Click to begin.</p>
-            <Link to="/test">
-              <button className="Startbutton">Start the Quiz</button>
-            </Link>
-        </div>
+        Try your best on the diagnostic!
+        <Link to="/test">
+            <button className="Startbutton">Start the Quiz</button>
+        </Link>
     </div>
     )
 }
