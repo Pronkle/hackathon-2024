@@ -15,13 +15,29 @@ export default function Calender() {
     const [friday, setFriday] = useState([]);
 
     useEffect(() => {
-        setTuesday([
+        setMonday([
             {
                 id: 1,
+                title: "Language II",
+                subject: "Reading",
+                completed: false
+            },
+        ])
+
+        setTuesday([
+            {
+                id: 2,
                 title: "Basic Algebra I",
                 subject: "Math",
                 completed: false
-            }
+            },
+            {
+                id: 3,
+                title: "Biology I",
+                subject: "Science",
+                completed: false
+            },
+            
         ])
     }, []);
 

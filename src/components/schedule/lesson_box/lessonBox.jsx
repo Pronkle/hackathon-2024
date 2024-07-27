@@ -1,14 +1,9 @@
 import React from "react";
 import { Draggable } from "react-beautiful-dnd";
 import "./style.css"
+import { Link } from "react-router-dom";
 
 export default function LessonBox({ task, index }) {
-
-    const getFillColor = (subject) => {
-        switch (subject) {
-            case "Math": return "#"
-        }
-    }
 
     return (
         <Draggable draggableId={`${task.id}`} key={task.id} index={index}>
@@ -20,14 +15,18 @@ export default function LessonBox({ task, index }) {
                     ref={provided.innerRef}
                     isDragging={snapshot.isDragging}
                 >
-                    <div style={{ display: "flex", justifyContent: "start", padding: 2 }}>
-            
+                    <div id="lessonBox-info" >
+                        <div id="lessonBox-subject">{task.subject}</div>
+                        <div id="lessonBox-title">{task.title}</div>
                     </div>
-                    <div style={{ display: "flex", justifyContent: "center", padding: 2 }}>
-                        <div>{task.title}</div>
-                    </div>
-                    <div className="lessonBox-icons">
+                    {/* <div className="lessonBox-icons">
                         <div>
+                        </div>
+                    </div> */}
+
+                    <div className="lessonBox-interact">
+                        <div id="lessonBox-go">
+                            <Link to="/lesson">Start</Link>
                         </div>
                     </div>
                     {provided.placeholder}

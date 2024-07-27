@@ -1,6 +1,7 @@
 #lessonBox-container {
     border-radius: 10px;
     box-shadow: 0px 5px 5px 0px grey;
+    background-image: linear-gradient(rgb(212, 197, 255), white);
     padding: 8px;
     color: #000;
     margin-bottom: 8px;
@@ -8,14 +9,55 @@
     margin-left: 10px;
     margin-right: 10px;
     cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    /* background-image: linear-gradient( white, rgb(4, 4, 100)); */
+}
+
+#lessonBox-container:active {
+    background-image: linear-gradient(rgb(196, 238, 255), white);
 }
 
 .lessonBox-icons {
     display: flex;
     justify-content: end;
     padding: 2px;
+}
+
+#lessonBox-info * {
+    text-align: left;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#lessonBox-info {
+    display: "flex";
+    justify-content: "start";
+    flex-direction: "column";
+    justify-content: "flex-start";
+}
+
+#lessonBox-subject {
+    font-size: 3vw;
+}
+#lessonBox-title {
+    text-transform: uppercase;
+}
+
+.lessonBox-interact {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+#lessonBox-go {
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+    padding-left: 10px;
+    background-color: white;
+    background-image: linear-gradient(white, rgb(219, 196, 255));
+    padding-right: 10px;
+    border-radius: 10px;
 }
