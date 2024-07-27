@@ -36,13 +36,13 @@ const Questions = ({ answer, setAnswer }) => {
     <div className="container mb-5">
       <div className="row"> 
         <div className="col-12"> 
-          <QuestionAns question={QuestionData[number]} handleAnswer={handleAnswer} />
+          <QuestionAns question={QuestionData[number]} handleAnswer={handleAnswer}/>
           <div className="buttons">
           <button className="btn btn-primary px-4 py-2 fw-bold" onClick={handleDecrement}> Prev</button>
           {show ? (
             <button className="btn btn-success px-4 py-2 fw-bold" onClick={handleIncrement}> Next</button>
           ) : (
-            <Link to="/score">
+            <Link to="/score" state={{answer: answer}}>
               <button className="btn btn-info px-4 py-2 fw-bold">Submit</button>
             </Link>
           )}
