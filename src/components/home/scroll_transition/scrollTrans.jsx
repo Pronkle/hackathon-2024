@@ -157,9 +157,9 @@ export default function ScrollTransition() {
                     <div id="second"></div>
                 </div>
                 <div className="info-slides">
-                    <div id="info1">asdf</div>
-                    <div id="info2">asdf</div>
-                    <div id="info3">asdf</div>
+                    <div id="info1">Breaking the Cycle of Poverty</div>
+                    <div id="info2">Providing a Free, Personalized Education for All</div>
+                    <div id="info3">One Student at a Time</div>
                 </div>
             </div>
             </div>

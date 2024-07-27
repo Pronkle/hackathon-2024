@@ -1,6 +1,6 @@
 .credit-section {
     height: 100vh;
-    background-image: linear-gradient(white, white, rgb(147, 141, 206));
+    background-image: linear-gradient(rgb(210, 207, 239), rgb(147, 141, 206));
 }
 
 .people-holder {

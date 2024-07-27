@@ -43,6 +43,16 @@ export default function About() {
                 },
             })
 
+            gsap.to('.about-section', {
+                scrollTrigger: {
+                    trigger: '.about-section',
+                    start: "top top",
+                    end: "bottom bottom",
+                    scrub: true,
+                },
+                backgroundColor: "rgb(210, 207, 239)"
+            })
+
         });
         return () => ctx.revert(); // <- cleanup!
       }, []);
