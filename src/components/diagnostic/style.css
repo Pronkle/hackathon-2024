@@ -71,6 +71,9 @@
 
 label.box .circle{height: 22px;width: 22px;border-radius: 50%;margin-right: 15px;border: 2px solid #0091ff;display: inline-block}
 label.box:hover{background: #7fd6f0}
+label.box #active{
+    background: #7fd6f0;
+}
 label.box{display: flex;font-weight: bold;margin-top: 10px;padding: 10px 12px;border-radius: 5px;cursor: pointer;border: 1px solid #0887dc;width: 1200px;}
 #one:checked~label.first, #two:checked~label.second, #three:checked~label.third, #four:checked~label.forth, #five:checked~label.fifth, #six:checked~label.sixth, #seven:checked~label.seveth, #eight:checked~label.eighth{border-color: #03426e}
 input[type="radio"]{display: none}
