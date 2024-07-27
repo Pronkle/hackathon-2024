@@ -32,7 +32,7 @@ export default function Navbar() {
     return (
         <div id={"navbar"}>
             <Link to="/" id="link">Home</Link>
-            <Link to="/demo" id="link">Try It!</Link>
+            <Link to="/schedule" id="link">Try It!</Link>
         </div>
     )
 }
