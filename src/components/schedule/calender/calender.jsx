@@ -18,7 +18,9 @@ export default function Calender() {
         setTuesday([
             {
                 id: 1,
-                title: "asdf"
+                title: "Basic Algebra I",
+                subject: "Math",
+                completed: false
             }
         ])
     }, []);
@@ -94,27 +96,21 @@ export default function Calender() {
 
     }
     function setNewState(destinationDroppableId, task, index) {
-        let updatedTask;
         switch (destinationDroppableId) {
-            case "1":   // TO DO
-                updatedTask = { ...task, completed: false };
-                setMonday(monday.toSpliced(index,0,updatedTask));
+            case "1":   
+                setMonday(monday.toSpliced(index,0,task));
                 break;
-            case "2":  // DONE
-                updatedTask = { ...task, completed: true };
-                setTuesday(tuesday.toSpliced(index,0,updatedTask));
+            case "2":  
+                setTuesday(tuesday.toSpliced(index,0,task));
                 break;
-            case "3":  // IN REVIEW
-                updatedTask = { ...task, completed: false };
-                setWednesday(wednesday.toSpliced(index,0,updatedTask));
+            case "3":  
+                setWednesday(wednesday.toSpliced(index,0,task));
                 break;
-            case "4":  // BACKLOG
-                updatedTask = { ...task, completed: false };
-                setThursday(thursday.toSpliced(index,0,updatedTask));
+            case "4":  
+                setThursday(thursday.toSpliced(index,0,task));
                 break;
-            case "5":  // BACKLOG
-                updatedTask = { ...task, completed: false };
-                setFriday(friday.toSpliced(index,0,updatedTask));
+            case "5":  
+                setFriday(friday.toSpliced(index,0,task));
                 break;
         }
     }

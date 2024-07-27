@@ -1,7 +1,15 @@
 import React from "react";
 import { Draggable } from "react-beautiful-dnd";
+import "./style.css"
 
 export default function LessonBox({ task, index }) {
+
+    const getFillColor = (subject) => {
+        switch (subject) {
+            case "Math": return "#"
+        }
+    }
+
     return (
         <Draggable draggableId={`${task.id}`} key={task.id} index={index}>
             {(provided, snapshot) => (
@@ -13,12 +21,7 @@ export default function LessonBox({ task, index }) {
                     isDragging={snapshot.isDragging}
                 >
                     <div style={{ display: "flex", justifyContent: "start", padding: 2 }}>
-            <span>
-              <small>
-                #{task.id}
-                  {"  "}
-              </small>
-            </span>
+            
                     </div>
                     <div style={{ display: "flex", justifyContent: "center", padding: 2 }}>
                         <div>{task.title}</div>
