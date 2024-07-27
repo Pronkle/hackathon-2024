@@ -12,9 +12,11 @@ const Questions = ({ answer, setAnswer }) => {
   }, [])
  
   const handleAnswer = (id, ans) => {
+    // console.log(ans)
     let temp = [...answer]; 
     temp[id] = ans;
     setAnswer([...temp]);
+    // console.log(temp)
   };
  
   const handleIncrement = () => {
@@ -40,7 +42,7 @@ const Questions = ({ answer, setAnswer }) => {
           {show ? (
             <button className="btn btn-success px-4 py-2 fw-bold" onClick={handleIncrement}> Next</button>
           ) : (
-            <Link to="/solution">
+            <Link to="/score">
               <button className="btn btn-info px-4 py-2 fw-bold">Submit</button>
             </Link>
           )}

@@ -5,7 +5,7 @@ const QuestionAns = ({ question, handleAnswer }) => {
   const { title, options, id } = question;
   return (
     <div className="question">
-      <p className="fw-bold">Question No - {id + 1} / 5</p> 
+      <p className="fw-bold">Question No - {id + 1} / 10</p> 
       <p className="fw-bold">{title}</p> 
       <div> 
         <input type="radio" name="box" id="one" /> 
