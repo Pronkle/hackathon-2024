@@ -28,6 +28,12 @@
     height: 65vh;
 }
 
+.Inquestion{
+    background-image: linear-gradient(white, rgb(255, 255, 255));
+    height: 100vh;
+
+}
+
 .welcome_box {
     height: 300px;
     display: flex;
