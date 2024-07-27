@@ -14,7 +14,7 @@ const Result = ({answer}) => {
     }
 
     return(
-        <div className="welcome_box">
+        <div className="fin_box">
             <div className="done_box">
                 <div className='Done'>Congrats on Finishing!</div>
                 <div className='Res'>You Scored {giveResult()} / 5</div>
