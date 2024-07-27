@@ -26,7 +26,7 @@ export default function LessonBox({ task, index }) {
 
                     <div className="lessonBox-interact">
                         <div id="lessonBox-go">
-                            <Link to="/lesson">Start</Link>
+                            <Link to="/lesson" state={{subject: task.title}}>Start</Link>
                         </div>
                     </div>
                     {provided.placeholder}

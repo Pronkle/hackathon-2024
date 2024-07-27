@@ -5,14 +5,17 @@ import { MainContainer, ChatContainer, MessageList, Message, MessageInput, Typin
 
 const API_KEY = process.env.REACT_APP_API_KEY;
 // "Explain things like you would to a 10 year old learning how to code."
-const systemMessage = { //  Explain things like you're talking to a software professional with 5 years of experience.
-  "role": "system", "content": "Chatgpt, please begin a lesson with me on the fundamentals of algebra I, please go section by section. At the end of each section, please give 1 practice question. Wait for me to respond before moving on to the next. If it is incorrect, please say so, and make note with an explanation. Only have a total of 5 sections. Also at the end, give a summary of what skills should be worked on next."
-}
 
-function LessonComp() {
+
+function LessonComp({subject}) {
+
+    const systemMessage = { //  Explain things like you're talking to a software professional with 5 years of experience.
+      "role": "system", "content": `Chatgpt, please begin a lesson with me on the fundamentals of ${subject}, please go section by section. At the end of each section, please give 1 practice question. Wait for me to respond before moving on to the next. If it is incorrect, please say so, and make note with an explanation. Only have a total of 3 sections. Also at the end, give a summary of what skills should be worked on next.`
+    }
+
     const [messages, setMessages] = useState([
       {
-        message: "Hello! Let's start with the fundamentals of algebra I. Are you ready to begin?",
+        message: `Hello! Let's start with the fundamentals of ${subject}. Are you ready to begin?`,
         sentTime: "just now",
         sender: "ChatGPT"
       }
