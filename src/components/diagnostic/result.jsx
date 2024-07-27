@@ -4,7 +4,7 @@ import QuestionData from './questiondata';
 
 const Result = ({answer}) => {
     function giveResult(){
-        let count = 0;
+        var count = 0;
         console.log(answer)
         for(let i = 0; i < 10; i++){
             if(answer[i] === QuestionData[i].ans) count++;
