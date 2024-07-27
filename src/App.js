@@ -22,7 +22,7 @@ function App() {
           <Route path="/lesson" element={<Lesson/>}/>
           <Route path="/start" element={<Start/>}/>
           <Route path="/test" element={<Test/>}/>
-        </Routes>
+          <Route path="/score" element={<Score/>}/>
     </div>
 
   );
