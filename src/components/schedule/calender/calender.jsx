@@ -16,14 +16,14 @@ export default function Calender({level}) {
     const [thursday, setThursday] = useState([]);
     const [friday, setFriday] = useState([]);
 
-    useLayoutEffect(() => {
-        let ctx = gsap.context(() => {
-          gsap.from("#lessonBox-container", {
-              transform: "translate(0, 200px)"
-          })
+    // useLayoutEffect(() => {
+    //     let ctx = gsap.context(() => {
+    //       gsap.from("#lessonBox-container", {
+    //           transform: "translate(0, 200px)",
+    //       })
     
-        return () => ctx.revert(); // <- cleanup!
-      })})
+    //     return () => ctx.revert(); // <- cleanup!
+    //   })})
 
     const generateSchedule = () => {
         console.log(level)
