@@ -88,7 +88,7 @@ function LessonComp({subject}) {
   
     return (
       <div className="lesson">
-        <div style={{ position:"relative", height: "800px", width: "700px"  }}>
+        <div style={{ position:"relative", height: "90vh", width: "700px"}}>
           <MainContainer>
             <ChatContainer>       
               <MessageList 
