@@ -45,6 +45,11 @@ const Questions = ({ answer, setAnswer }) => {
   };
  
   const handleIncrement = () => {
+    if (number === 9) {
+      alert("This is the Last Question");
+      setShow(false)
+      return;
+    }
     setNumber(number + 1);
 
     clearChoices()
@@ -53,11 +58,7 @@ const Questions = ({ answer, setAnswer }) => {
     if (answer.length > number+1) {
       getChoices(number+1)
     }
-    if (number === 9) {
-      alert("This is the Last Question");
-      setShow(false)
-      return;
-    }
+    
   }
   const handleDecrement = () => {
     if (number === 0) return;
