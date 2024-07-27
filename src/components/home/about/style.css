@@ -10,4 +10,8 @@
     height: 50vh;
     display: flex;
     flex-direction: column;
+    width: 60vw;
+    line-height: 3.5;
+    margin: auto;
+    text-align: left;
 }
