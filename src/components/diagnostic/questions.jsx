@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import QuestionAns from "./questionans";
 import QuestionData from "./questiondata";
 import { Link } from "react-router-dom";
+import './style.css'
  
 const Questions = ({ answer, setAnswer }) => {
   const [number, setNumber] = useState(0);
@@ -34,16 +35,16 @@ const Questions = ({ answer, setAnswer }) => {
  
   return (
     <div className="container mb-5">
-      <div className="row"> 
-        <div className="col-12"> 
+      <div className="qbox"> 
+        <div className="qinfo"> 
           <QuestionAns question={QuestionData[number]} handleAnswer={handleAnswer}/>
           <div className="buttons">
-          <button className="btn btn-primary px-4 py-2 fw-bold" onClick={handleDecrement}> Prev</button>
+          <button className="prev" onClick={handleDecrement}> Prev</button>
           {show ? (
-            <button className="btn btn-success px-4 py-2 fw-bold" onClick={handleIncrement}> Next</button>
+            <button className="next" onClick={handleIncrement}> Next</button>
           ) : (
             <Link to="/score" state={{answer: answer}}>
-              <button className="btn btn-info px-4 py-2 fw-bold">Submit</button>
+              <button className="submit">Submit</button>
             </Link>
           )}
           </div>

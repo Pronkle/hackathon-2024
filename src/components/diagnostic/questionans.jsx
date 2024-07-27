@@ -1,4 +1,5 @@
 //C:\react-js\myreactdev\src\components\QuestionComp.js
+import "./style.css"
 import React from "react";
  
 const QuestionAns = ({ question, handleAnswer }) => {
