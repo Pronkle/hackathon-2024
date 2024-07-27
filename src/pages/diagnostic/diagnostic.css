@@ -1,18 +1,8 @@
-#info{
-    font-size: x-large;
-    padding: 0;
-    border: 0;
-}
-
-#header{
-    background-image: linear-gradient(#985ad2, #c6e5f8);
-    height: 35vh;
-    font-size: 125px;
-    /*font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+.StartHeader{
     color: white;
-    border: 0;
-    padding-bottom: 0;
-    padding-top: 0;
+    background-image: url("../../../public/desk.jpg");
+    height: 300px;
+    width: auto;
 }
 
 #info{

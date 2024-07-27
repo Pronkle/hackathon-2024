@@ -15,7 +15,7 @@ export default function Diagnostic() {
 
     return (
         <div className="Diagnostic">
-            <div id='header'>
+            <div className='Start_Header'>
                 Hi. Let's get started.
             </div>
             <div id='test'>
