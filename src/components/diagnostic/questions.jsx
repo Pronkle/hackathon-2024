@@ -12,6 +12,30 @@ const Questions = ({ answer, setAnswer }) => {
     
   }, [])
  
+  const clearChoices = () => {
+    document.getElementById("one").checked = false;
+    document.getElementById("two").checked = false;
+    document.getElementById("three").checked = false;
+    document.getElementById("four").checked = false;
+  }
+
+  const getChoices = (num) => {
+    switch (answer[num]) {
+      case 0:
+        document.getElementById("one").checked = true;
+        break;
+      case 1:
+        document.getElementById("two").checked = true;
+        break;
+      case 2:
+        document.getElementById("three").checked = true;
+        break;
+      case 3:
+        document.getElementById("four").checked = true;
+        break;
+    }
+  }
+
   const handleAnswer = (id, ans) => {
     // console.log(ans)
     let temp = [...answer]; 
@@ -21,16 +45,29 @@ const Questions = ({ answer, setAnswer }) => {
   };
  
   const handleIncrement = () => {
+    setNumber(number + 1);
+
+    clearChoices()
+
+    // revisiting question
+    if (answer.length > number+1) {
+      getChoices(number+1)
+    }
     if (number === 9) {
-      alert("This is a Last questions");
+      alert("This is the Last Question");
       setShow(false)
       return;
     }
-    setNumber(number + 1);
-  };
+  }
   const handleDecrement = () => {
     if (number === 0) return;
     setNumber(number - 1);
+
+    clearChoices()
+    if (answer.length >= number-1) {
+      getChoices(number-1)
+    }
+    
   };
  
   return (
