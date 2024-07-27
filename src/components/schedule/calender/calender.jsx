@@ -28,26 +28,42 @@ export default function Calender({level}) {
         setMonday([
             {
                 id: 1,
-                title: "Language II",
-                subject: "Reading",
-                completed: false
-            },
-        ])
-
-        setTuesday([
-            {
-                id: 2,
                 title: "Algebra I",
                 subject: "Math",
                 completed: false
-            },
+            }
+        ])
+        setTuesday([
+            {
+                id: 2,
+                title: "Language I",
+                subject: "Reading",
+                completed: false
+            }
+        ])
+        setWednesday([
             {
                 id: 3,
                 title: "Biology I",
                 subject: "Science",
                 completed: false
-            },
-            
+            }
+        ])
+        setThursday([
+            {
+                id: 4,
+                title: "Algebra I",
+                subject: "Math",
+                completed: false
+            }
+        ])
+        setFriday([
+            {
+                id: 5,
+                title: "Language I",
+                subject: "Reading",
+                completed: false
+            }
         ])
     }
 
@@ -182,7 +198,7 @@ export default function Calender({level}) {
                 <h1 id="schedule-title">Schedule</h1>
                 <button id="generate" onClick={generateSchedule}><h1>Generate</h1></button>
             </div>
-
+            <hr/>
             <div
                 style={{
                     display: "flex",
@@ -201,6 +217,7 @@ export default function Calender({level}) {
                 <Column title={"THUR"} tasks={thursday} id={"4"} />
                 <Column title={"FRI"} tasks={friday} id={"5"} />
             </div>
+            <hr/>
         </DragDropContext>
     );
 }
