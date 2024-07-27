@@ -1,8 +1,8 @@
-.StartHeader{
+.Start_Header{
     color: white;
     background-image: url("../../../public/desk.jpg");
     height: 300px;
-    width: auto;
+    width: 2000px;
 }
 
 #info{

@@ -16,11 +16,10 @@ export default function Diagnostic() {
     return (
         <div className="Diagnostic">
             <div className='Start_Header'>
-                Hi. Let's get started.
             </div>
             <div id='test'>
-                <Start/>
-                <Menu/>
+                    <Start/>
+                    <Menu/>
             </div>
         </div>
     )
