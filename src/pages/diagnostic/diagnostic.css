@@ -1,6 +1,6 @@
 .Start_Header{
     color: white;
-    background-image: url("../../../public/desk.jpg");
+    background-image: url("../../../public/chatwallpaper.jpg");
     height: 300px;
     width: 2000px;
 }
@@ -24,7 +24,7 @@
 }
 
 .welcome_box {
-    height: 550px;
+    height: 70vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -32,9 +32,10 @@
     padding-bottom: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 70px;
-    padding-bottom: 40px;
-    background-color: white;
-    font-weight: bolder
+    padding-bottom: 140px;
+    background-image: linear-gradient(rgb(74, 172, 246),white);
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
 }
 
 .row_box {
@@ -74,14 +75,14 @@
 
 .Startbutton{
     border-radius: 10px;
-    background-color: green;
+    background-color: rgb(63, 126, 227);
     color: white;
     width: 220px;
     height: 50px;
     font-weight: bolder;
     font-size: 22px;
     border-width: 5px;
-    border-color: green;
+    border-color: rgb(106, 83, 255);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
