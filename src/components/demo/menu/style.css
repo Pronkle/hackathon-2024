@@ -11,10 +11,12 @@
     padding: 0;
     width: 100%;
 }
-/* 
+
 .Menulist #active{
-    background-color: d;
-} */
+    background-color: #c6e5f8;
+    color: #130466;
+    border-radius: 100px;
+}
 
 .Menulist .row{
     width:3.75vw;
