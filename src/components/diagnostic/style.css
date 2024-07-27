@@ -61,6 +61,13 @@
     padding-bottom: 50px;
     font-size: 20px;
 }
+.fin_box{
+    padding-top: 60px;
+}
+.done_box{
+    font-size: 60px;
+}
+
 .buttons{
     display: flex;padding-top: 10px;padding-bottom: 10px;
     justify-content: space-evenly;
