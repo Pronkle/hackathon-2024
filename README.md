@@ -1,6 +1,14 @@
 # Hackathon 2024 -- Flex Ed
 
-Tech Stack - ReactJS, CSS, GSAP
+An adaptive learning app with the mission of bringing, fair, free, and personal education to all.
+
+Tech Stack:
+- ReactJS
+- JS
+- HTML
+- CSS
+- GSAP
+
 Our Team: 
 - Dev Team: Alan Ji and Allen Guo 
 - Graphic-Design: Kennedy Jefferson
